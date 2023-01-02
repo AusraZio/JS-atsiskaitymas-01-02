@@ -8,3 +8,10 @@ pamatyti jo pateikto svorio konvertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+
+function kiloweightConvert(value) {
+    document.getElementById("Svarai").innerHTML = value * 2.2046;
+    document.getElementById("Gramai").innerHTML = value / 0.001;
+    document.getElementById("Uncijos").innerHTML = value * 35.274;
+  }

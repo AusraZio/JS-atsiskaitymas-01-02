@@ -17,12 +17,21 @@
       <div class="wrapper">
         <h1 class="headline">Weight Converter</h1>
         <!-- Users input -->
-        <form>
-          <input type="text" id="search" placeholder="Enter kilograms..." />
-          <input type="submit" id="submit-btn" value="Calculate" />
+        <form>    
+          <input id="Kilograms"
+            type="number"
+            placeholder="Enter kilograms..."
+            oninput="kiloweightConvert(this.value)"
+            onchange="kiloweightConvert(this.value)"/>
+          <button onclick="kiloweightConvert(document.querySelector('#Kilograms').value)">Calculate</button>
         </form>
         <!-- Place for output after form submission -->
         <div id="output"></div>
+        <p>Svarai (lb): <span id="Svarai"></span></p>
+          
+            <p>Gramai (g): <span id="Gramai"></span></p>
+                
+            <p>Uncijos (oz): <span id="Uncijos"></span></p>
       </div>
     </main>
 
