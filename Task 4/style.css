@@ -1,20 +1,12 @@
 /* Resets */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
 
 /* Mobile first */
-.wrapper {
-  min-height: 100vh;
-  min-width: calc(100vw - (100vw - 100%));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .container {
   width: 100%;
@@ -26,4 +18,26 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+
+.car {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.car h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.manufacturer-card {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.manufacturer-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
